@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="main.c"; gcc -S "$CFILE" > "${CFILE%.c}.s"
+CFILE="2-main.c"; gcc -S "$CFILE" > "${CFILE%.c}.s"
