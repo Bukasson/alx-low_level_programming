@@ -1,8 +1,12 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Prints the English alphabet in lowercase.
  *
- * Return: Always 0 (Success)
+ * Description:
+ * The function prints the English alphabet in lowercase to the std output.
+ * It starts from 'a' and continues up to 'z'.
+ * Each letter is separated by a space
+ * and the sequence is terminated by a newline character.
  */
 void print_alphabet(void)
 {
