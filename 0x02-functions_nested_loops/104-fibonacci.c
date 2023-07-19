@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-int count, fib_count;
+int count;
 unsigned long int fib1 = 1, fib2 = 2, next_fib;
 
 printf("%lu, %lu, ", fib1, fib2);
