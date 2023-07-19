@@ -7,16 +7,22 @@
  */
 int main(void)
 {
-int i;
-int sum = 0;
+int count = 0;
+long int fib1 = 1, fib2 = 2, next_fib;
 
-for (i = 0; i < 1024; i++)
+while (count < 50)
 {
-if (i % 3 == 0 || i % 5 == 0)
-sum += i;
-}
+if (count == 49)
+printf("%ld\n", fib1);
+else
+printf("%ld, ", fib1);
 
-printf("%d\n", sum);
+next_fib = fib1 + fib2;
+fib1 = fib2;
+fib2 = next_fib;
+
+count++;
+}
 
 return (0);
 }
