@@ -11,13 +11,7 @@ carry = sum / 10;
 }
 }
 
-/**
- * main - Entry point of the program
- *
- * Return: 0 (success)
- */
-int main(void)
-{
+int main(void) {
 int fib1[MAX_DIGITS] = {0}, fib2[MAX_DIGITS] = {0}, next_fib[MAX_DIGITS] = {0};
 
 fib1[MAX_DIGITS - 1] = 1;
@@ -31,8 +25,8 @@ for (int i = MAX_DIGITS - 2; i >= 0; i--)
 printf("%d", fib2[i]);
 printf(", ");
 
-for (int fib_count = 3; fib_count <= 98; fib_count++)
-{
+int fib_count;
+for (fib_count = 3; fib_count <= 98; fib_count++) {
 addArrays(fib1, fib2, next_fib);
 
 // Shift arrays for the next iteration
