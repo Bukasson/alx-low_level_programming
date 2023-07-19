@@ -24,5 +24,5 @@ else
 printf("%lu\n", next_fib);
 }
 
-return 0;
+return (0);
 }
