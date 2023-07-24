@@ -12,6 +12,10 @@ int _atoi(char *s)
 	int num = 0;
 	int i = 0;
 
+	/* Skip leading spaces */
+	while (s[i] == ' ')
+		i++;
+
 	/* Check for a sign (+/-) */
 	while (s[i] == '-' || s[i] == '+')
 	{
