@@ -28,7 +28,7 @@ int _strlen(char *s)
 void puts_half(char *str)
 {
 	int length = _strlen(str);
-	int start = (length + 1) / 2; // Start index for printing
+	int start = (length + 1) / 2; /* Start index for printing */
 
 	while (str[start] != '\0')
 	{
