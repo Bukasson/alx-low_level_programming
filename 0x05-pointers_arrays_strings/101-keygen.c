@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define PASSWORD_LENGTH 10
+
 /**
  * getRandomChar - Generates a random character.
  *
@@ -17,14 +19,13 @@ char getRandomChar() {
 /**
  * generateRandomPassword - Generates a random password.
  * @password: Pointer to store the generated password.
- * @length: The length of the password to be generated.
  */
-void generateRandomPassword(char *password, int length) {
+void generateRandomPassword(char *password) {
 	int i;
-	for (i = 0; i < length; i++) {
+	for (i = 0; i < PASSWORD_LENGTH; i++) {
 		password[i] = getRandomChar();
 	}
-	password[length] = '\0'; /* Null-terminate the password string */
+	password[PASSWORD_LENGTH] = '\0'; /* Null-terminate the password string */
 }
 
 /**
@@ -35,11 +36,9 @@ void generateRandomPassword(char *password, int length) {
 int main(void) {
 	srand(time(NULL)); /* Seed the random number generator with the current time */
 
-	int passwordLength = 10; /* Set the desired password length */
+	char password[PASSWORD_LENGTH + 1]; /* +1 for null terminator */
 
-	char password[passwordLength + 1]; /* +1 for null terminator */
-
-	generateRandomPassword(password, passwordLength);
+	generateRandomPassword(password);
 	printf("Random Password: %s\n", password);
 
 	return 0;
