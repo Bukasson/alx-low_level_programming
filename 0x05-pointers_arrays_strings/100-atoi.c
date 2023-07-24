@@ -32,5 +32,5 @@ int _atoi(char *s)
 	}
 
 	/* Apply the sign to the final integer */
-	return sign * num;
+	return (sign * num);
 }
