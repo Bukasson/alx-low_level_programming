@@ -1,0 +1,11 @@
+This folder contains functions that employs the user of arrays, pointers and strings to do various tasks like 
+- filling a memory with a constant byte
+- copying a memory area
+- locating a character in a string
+- getting teh length of a prefix substring
+- searching a string for any set of bytes
+- locating a substring
+- printing the chess board
+- printing the sum of the diagonals of a square mtrix of integers
+- setting teh value of a pointer to a char
+- creating a file that contains the password for the crackme2 executbale
